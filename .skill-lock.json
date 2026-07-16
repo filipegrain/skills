@@ -110,16 +110,6 @@
       "installedAt": "2026-06-25T14:36:32.948Z",
       "updatedAt": "2026-07-15T23:25:16.335Z"
     },
-    "teach": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/productivity/teach/SKILL.md",
-      "skillFolderHash": "15f8c86d39ef834e643d092733ca899b59049067",
-      "pluginName": "mattpocock-skills",
-      "installedAt": "2026-06-25T14:36:32.950Z",
-      "updatedAt": "2026-07-15T23:25:16.335Z"
-    },
     "triage": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -194,26 +184,6 @@
       "installedAt": "2026-06-28T03:39:56.723Z",
       "updatedAt": "2026-06-28T03:39:56.723Z"
     },
-    "ask-matt": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/engineering/ask-matt/SKILL.md",
-      "skillFolderHash": "c7d57789b230d6f88d26ca81ab9d03bad160171f",
-      "pluginName": "mattpocock-skills",
-      "installedAt": "2026-07-15T23:25:16.318Z",
-      "updatedAt": "2026-07-15T23:25:16.318Z"
-    },
-    "code-review": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/engineering/code-review/SKILL.md",
-      "skillFolderHash": "474a27d46efb1eff9724a29ae1edc9cd8a75d911",
-      "pluginName": "mattpocock-skills",
-      "installedAt": "2026-07-15T23:25:16.319Z",
-      "updatedAt": "2026-07-15T23:25:16.319Z"
-    },
     "grill-me": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -272,15 +242,6 @@
       "skillFolderHash": "e4dc85309aebecd9759f6c4cb3fdcb7c4f69544c",
       "installedAt": "2026-07-15T23:25:16.339Z",
       "updatedAt": "2026-07-15T23:25:16.339Z"
-    },
-    "to-questionnaire": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/in-progress/to-questionnaire/SKILL.md",
-      "skillFolderHash": "7c4d04fb4d77824d7d98433ee7a8b17dde5efa13",
-      "installedAt": "2026-07-15T23:25:16.341Z",
-      "updatedAt": "2026-07-15T23:25:16.341Z"
     }
   },
   "dismissed": {
