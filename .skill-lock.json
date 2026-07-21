@@ -157,15 +157,6 @@
       "installedAt": "2026-06-25T14:36:32.965Z",
       "updatedAt": "2026-07-15T23:25:16.342Z"
     },
-    "review": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "skillPath": "skills/in-progress/review/SKILL.md",
-      "skillFolderHash": "54f63545c8a6d9aaeacc036107b5f32f427c9bc6",
-      "installedAt": "2026-06-25T14:36:32.968Z",
-      "updatedAt": "2026-06-25T14:36:32.968Z"
-    },
     "ubiquitous-language": {
       "source": "mattpocock/skills",
       "sourceType": "github",
