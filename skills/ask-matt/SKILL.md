@@ -57,6 +57,8 @@ Not feature work, just upkeep.
 
 - **`/improve-codebase-architecture`** runs whenever you have a spare moment to keep the codebase good for agents to operate in. It surfaces **deepening opportunities**; picking one _generates an idea_ you can take into the main flow at `/grill-with-docs`. It's the survey that finds the candidates; **`/codebase-design`** (below) is the bench you design the chosen one on.
 
+- **`/organize-project`** installs the `AGENTS.md` contract and docs layout in a repository that lacks one: fixed sections at the root, nested `AGENTS.md` only where rules differ, docs filed under `docs/`. Run it once on an unstructured repo so the other skills enter at a root `AGENTS.md`.
+
 ## Vocabulary underneath
 
 Two model-invoked references that run *beneath* the other skills, each the single source of truth for its vocabulary. Reach for them directly when the **words**, not the process, are the problem; or let the skills above pull them in.

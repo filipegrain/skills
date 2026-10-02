@@ -1,7 +1,7 @@
 <!-- Template: copy to the repository root as AGENTS.md.
-Replace every [placeholder]. Keep only pointers whose targets exist.
-A section with nothing project-specific says "Not applicable to this project."
-Never invent content. -->
+Replace every [placeholder] with a fact verified in the repository: a manifest, config, script, migration, or existing doc.
+A section with nothing project-specific says "Not applicable to this project." Delete every pointer whose target does not exist.
+Keep this file lean: it is loaded into every agent session, so a line earns its place only by changing behaviour versus the agent's default. -->
 
 # AGENTS.md
 
@@ -30,7 +30,6 @@ Never invent content. -->
 ### Main Components
 
 - `[component]` — [responsibility]
-- `[component]` — [responsibility]
 
 ### Architecture Documentation
 
@@ -54,30 +53,15 @@ Never invent content. -->
 
 ## Development
 
-### Installation
+### Commands
 
 ```bash
 [actual installation command]
-```
-
-### Development
-
-```bash
 [actual development command]
-```
-
-### Build
-
-```bash
 [actual build command]
 ```
 
-### Important Commands
-
-```text
-[command] — [purpose]
-[command] — [purpose]
-```
+List only commands a manifest does not make obvious, plus conventions such as the package manager when several are possible.
 
 Detailed development documentation:
 
@@ -99,14 +83,8 @@ Detailed development documentation:
 
 ### Validation
 
-Before completing a change:
-
-- Run relevant tests.
-- Run the project's type checker.
-- Run linting when applicable.
-- Review the final diff.
-
-Do not claim validation was performed if the command was not actually executed.
+- Run the project's tests, type checker, and linter as configured.
+- Report exactly what ran; a check that did not run is reported as not run.
 
 ---
 
@@ -114,11 +92,7 @@ Do not claim validation was performed if the command was not actually executed.
 
 ### General
 
-- Follow existing project conventions.
-- Prefer existing utilities over duplicating functionality.
-- Keep changes scoped to the requested task.
-- Avoid unnecessary dependencies.
-- Do not modify generated files manually.
+[Project-specific conventions.]
 
 ### Language
 
@@ -140,24 +114,17 @@ Do not claim validation was performed if the command was not actually executed.
 
 ## Database
 
-### Database
-
-[Database technology.]
-
 ### Schema
 
-[Important schema information.]
+[Database technology and important schema information.]
 
 ### Migrations
 
-[Migration system and rules.]
+[Project's migration system.]
 
 ### Rules
 
-- Use migrations for schema changes.
-- Do not modify released migrations unless explicitly required.
-- Follow existing database naming conventions.
-- Do not execute destructive operations against production.
+- Never run destructive operations against production.
 
 Detailed documentation:
 
@@ -172,22 +139,22 @@ Project documentation is organized under:
 
 ```text
 docs/
-├── architecture/
-├── development/
-├── decisions/
+├── architecture/   how the system works
+├── development/    setup, testing, debugging, deployment procedures
+├── decisions/            sequential decisions: 0001-slug.md
 └── plans/
     ├── active/
     └── completed/
 ```
 
+Show only the directories that exist.
+
 ### Documentation Rules
 
-- Stable architectural knowledge lives in `docs/architecture/`.
-- Operational procedures live in `docs/development/`.
-- Significant architectural decisions are recorded in `docs/decisions/`.
-- Temporary implementation plans live in `docs/plans/active/` and move to `docs/plans/completed/` when done.
-- `AGENTS.md` holds rules and navigation; `docs/` holds detailed knowledge.
-- A piece of knowledge lives in exactly one place.
+- Rules and navigation live in this file; detailed knowledge lives in `docs/`.
+- Each fact lives in exactly one place.
+- A plan moves from `docs/plans/active/` to `docs/plans/completed/` when done.
+- Conventions owned by other tools stay where they are and are.
 
 ---
 
@@ -208,57 +175,23 @@ docs/
 ### Rules
 
 - Do not rewrite shared history without explicit authorization.
-- Do not discard unrelated user changes.
-- Review the final diff before completing a task.
 
 ---
 
 ## Security
 
 - Never commit credentials, tokens, private keys, or secrets.
-- Do not expose credentials in logs or documentation.
-- Do not disable security controls merely to make a task pass.
-- Treat production credentials and production data as sensitive.
-- Follow existing authentication and authorization mechanisms.
-
-Additional security documentation:
-
-- `[path]`
+- Treat production credentials and data as sensitive.
 
 ---
 
 ## Agent Workflow
 
-When starting a task:
-
-- Read this `AGENTS.md`.
-- Identify the relevant project area.
-- Read any applicable nested `AGENTS.md`.
-- Read relevant documentation under `docs/`.
-- Inspect existing implementation before creating new code.
-- Make the smallest appropriate change.
-- Run relevant validation.
-- Review the final diff.
-- Report validation results accurately.
-
-### For Complex Tasks
-
-- Create a plan under `docs/plans/active/`.
-- Define objectives and constraints.
-- Implement the change.
-- Validate the implementation.
-- Update relevant documentation.
-- Move the completed plan to `docs/plans/completed/`.
+- Read the nearest nested `AGENTS.md` and any relevant documentation under `docs/` before editing.
 
 ---
 
 ## Restrictions
 
-- Do not invent undocumented project behavior.
-- Do not introduce architectural changes without justification.
-- Do not modify unrelated code.
-- Do not delete user changes.
-- Do not expose secrets.
-- Do not claim tests or commands were executed when they were not.
-- Do not create duplicate documentation.
-- Do not create documentation merely to fill sections of this file.
+- Verify a missing fact in the repository rather than assume it.
+- Do not create documentation merely to fill a section.
