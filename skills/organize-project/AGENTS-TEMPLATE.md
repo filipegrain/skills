@@ -5,7 +5,7 @@ Never invent content. -->
 
 # AGENTS.md
 
-## 1. Project
+## Project
 
 ### Overview
 
@@ -21,7 +21,7 @@ Never invent content. -->
 
 ---
 
-## 2. Architecture
+## Architecture
 
 ### Overview
 
@@ -38,7 +38,7 @@ Never invent content. -->
 
 ---
 
-## 3. Repository Structure
+## Repository Structure
 
 ```text
 [repository tree showing only important directories]
@@ -52,7 +52,7 @@ Never invent content. -->
 
 ---
 
-## 4. Development
+## Development
 
 ### Installation
 
@@ -85,7 +85,7 @@ Detailed development documentation:
 
 ---
 
-## 5. Testing
+## Testing
 
 ### Test Commands
 
@@ -101,16 +101,16 @@ Detailed development documentation:
 
 Before completing a change:
 
-1. Run relevant tests.
-2. Run the project's type checker.
-3. Run linting when applicable.
-4. Review the final diff.
+- Run relevant tests.
+- Run the project's type checker.
+- Run linting when applicable.
+- Review the final diff.
 
 Do not claim validation was performed if the command was not actually executed.
 
 ---
 
-## 6. Code Standards
+## Code Standards
 
 ### General
 
@@ -138,7 +138,7 @@ Do not claim validation was performed if the command was not actually executed.
 
 ---
 
-## 7. Database
+## Database
 
 ### Database
 
@@ -166,7 +166,7 @@ Detailed documentation:
 
 ---
 
-## 8. Documentation
+## Documentation
 
 Project documentation is organized under:
 
@@ -191,7 +191,7 @@ docs/
 
 ---
 
-## 9. Git
+## Git
 
 ### Branching
 
@@ -213,7 +213,7 @@ docs/
 
 ---
 
-## 10. Security
+## Security
 
 - Never commit credentials, tokens, private keys, or secrets.
 - Do not expose credentials in logs or documentation.
@@ -227,32 +227,32 @@ Additional security documentation:
 
 ---
 
-## 11. Agent Workflow
+## Agent Workflow
 
 When starting a task:
 
-1. Read this `AGENTS.md`.
-2. Identify the relevant project area.
-3. Read any applicable nested `AGENTS.md`.
-4. Read relevant documentation under `docs/`.
-5. Inspect existing implementation before creating new code.
-6. Make the smallest appropriate change.
-7. Run relevant validation.
-8. Review the final diff.
-9. Report validation results accurately.
+- Read this `AGENTS.md`.
+- Identify the relevant project area.
+- Read any applicable nested `AGENTS.md`.
+- Read relevant documentation under `docs/`.
+- Inspect existing implementation before creating new code.
+- Make the smallest appropriate change.
+- Run relevant validation.
+- Review the final diff.
+- Report validation results accurately.
 
 ### For Complex Tasks
 
-1. Create a plan under `docs/plans/active/`.
-2. Define objectives and constraints.
-3. Implement the change.
-4. Validate the implementation.
-5. Update relevant documentation.
-6. Move the completed plan to `docs/plans/completed/`.
+- Create a plan under `docs/plans/active/`.
+- Define objectives and constraints.
+- Implement the change.
+- Validate the implementation.
+- Update relevant documentation.
+- Move the completed plan to `docs/plans/completed/`.
 
 ---
 
-## 12. Restrictions
+## Restrictions
 
 - Do not invent undocumented project behavior.
 - Do not introduce architectural changes without justification.

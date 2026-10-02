@@ -6,13 +6,13 @@ disable-model-invocation: true
 
 # Organize Project
 
-Organize a repository so any agent enters at the root `AGENTS.md` and finds every kind of rule where the **contract** says it lives: section 7 is database rules, section 11 is the workflow, in every repository. Install the contract without replacing what the project already does well.
+Organize a repository so any agent enters at the root `AGENTS.md` and finds every kind of rule where the **contract** says it lives: the Database section holds the database rules, the Agent Workflow section the workflow, in every repository. Install the contract without replacing what the project already does well.
 
 ## The contract
 
 Root `AGENTS.md` uses these sections, in this order:
 
-1. Project · 2. Architecture · 3. Repository Structure · 4. Development · 5. Testing · 6. Code Standards · 7. Database · 8. Documentation · 9. Git · 10. Security · 11. Agent Workflow · 12. Restrictions
+Project · Architecture · Repository Structure · Development · Testing · Code Standards · Database · Documentation · Git · Security · Agent Workflow · Restrictions
 
 [AGENTS-TEMPLATE.md](AGENTS-TEMPLATE.md) holds the skeleton and the standing content each section carries.
 
@@ -20,31 +20,31 @@ Every line is a fact **verified** in the repository — read from a manifest, co
 
 ## Process
 
-### 1. Survey — read only
+### Survey — read only
 
 Read the repository before touching it: manifests (`package.json`, `pyproject.toml`, `go.mod`, `Cargo.toml`, …), build/test/CI/Docker config, scripts, migrations, `README`, existing `docs/`, and every agent configuration — `AGENTS.md`, `CLAUDE.md`, `.cursor/`, `.github/copilot-instructions.md`, `.opencode/`.
 
 Done when you can name the stack, the real commands, the major components, and every existing doc and agent config — and have written nothing.
 
-### 2. Mark the boundaries
+### Mark the boundaries
 
 A boundary earns a nested `AGENTS.md` only when its rules genuinely differ from the root: a different stack, architecture, test procedure, security requirement, or conventions that would overload the root file. A directory existing is not a reason.
 
 Done when every major component is either assigned a nested file or consciously skipped.
 
-### 3. Write the root AGENTS.md
+### Write the root AGENTS.md
 
 Copy [AGENTS-TEMPLATE.md](AGENTS-TEMPLATE.md); fill every section with surveyed facts and keep its standing content. A section with nothing project-specific says "Not applicable to this project." Point only at docs that exist.
 
-Done when all 12 sections are present in order, every command and path is checked against the repository, and nothing is invented.
+Done when all sections are present in order, every command and path is checked against the repository, and nothing is invented.
 
-### 4. Write nested AGENTS.md
+### Write nested AGENTS.md
 
-Same section order; section 1 becomes Scope, naming the directory the file governs. Only rules additional or more specific than the root — root rules stay in the root — and omit sections with nothing to add.
+Same section order; the Project section becomes Scope, naming the directory the file governs. Only rules additional or more specific than the root — root rules stay in the root — and omit sections with nothing to add.
 
-Done when every boundary marked in step 2 has a file whose every line is scope-specific.
+Done when every boundary you marked has a file whose every line is scope-specific.
 
-### 5. Migrate docs
+### Migrate docs
 
 Classify existing documentation into the tree, moving rather than deleting:
 
@@ -62,7 +62,7 @@ Preserve history and useful content; deduplicate only once the replacement is ve
 
 Done when every existing doc is filed or deliberately left in place, no fact appears twice, and every doc the root references exists.
 
-### 6. Validate and report
+### Validate and report
 
 Check:
 
