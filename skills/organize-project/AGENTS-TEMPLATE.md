@@ -194,4 +194,3 @@ Show only the directories that exist.
 ## Restrictions
 
 - Verify a missing fact in the repository rather than assume it.
-- Do not create documentation merely to fill a section.
