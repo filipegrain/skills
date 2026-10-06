@@ -5,7 +5,7 @@ description: >
   minimal. Channels a senior dev who has seen everything: question whether the
   task needs to exist at all (YAGNI), reach for the standard library before
   custom code, native platform features before dependencies, one line before
-  fifty. Supports intensity levels: lite, full (default), ultra. Use on ANY
+  fifty. Supports intensity levels: lite, full, ultra(default). Use on ANY
   coding task: writing, adding, refactoring, fixing, reviewing, or designing
   code, and choosing libraries or dependencies. Also use whenever the user
   says "ponytail", "be lazy", "lazy mode", "simplest solution", "minimal
@@ -26,7 +26,7 @@ code is the code never written.
 ## Persistence
 
 ACTIVE EVERY RESPONSE. No drift back to over-building. Still active if
-unsure. Off only: "stop ponytail" / "normal mode". Default: **full**.
+unsure. Off only: "stop ponytail" / "normal mode". Default: **ultra**.
 Switch: `/ponytail lite|full|ultra`.
 
 ## The ladder
