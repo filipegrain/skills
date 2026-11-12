@@ -10,24 +10,21 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-10-14T20:34:15.147Z",
       "updatedAt": "2026-10-14T20:34:15.147Z"
+    },
+    "caveman-review": {
+      "source": "JuliusBrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "skillPath": "skills/caveman-review/SKILL.md",
+      "skillFolderHash": "515d07fbd383fb9a15ad94647d133f681dc56197",
+      "installedAt": "2026-11-12T17:22:29.755Z",
+      "updatedAt": "2026-11-12T17:22:29.755Z"
     }
   },
   "dismissed": {
     "findSkillsPrompt": true
   },
   "lastSelectedAgents": [
-    "amp",
-    "cline",
-    "codex",
-    "cursor",
-    "droid",
-    "gemini-cli",
-    "github-copilot",
-    "kilo",
-    "kimi-code-cli",
-    "opencode",
-    "pi",
-    "warp",
-    "zed"
+    "opencode"
   ]
 }
