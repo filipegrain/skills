@@ -19,12 +19,35 @@
       "skillFolderHash": "515d07fbd383fb9a15ad94647d133f681dc56197",
       "installedAt": "2026-11-12T17:22:29.755Z",
       "updatedAt": "2026-11-12T17:22:29.755Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
+      "pluginName": "example-skills",
+      "installedAt": "2026-11-14T04:09:09.741Z",
+      "updatedAt": "2026-11-14T04:09:09.741Z"
     }
   },
   "dismissed": {
     "findSkillsPrompt": true
   },
   "lastSelectedAgents": [
-    "opencode"
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "fx",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed"
   ]
 }
